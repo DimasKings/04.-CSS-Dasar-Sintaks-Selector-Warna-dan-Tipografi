@@ -1,0 +1,247 @@
+/* 
+   Dikerjakan oleh : Dimas Prasatya
+   NPM             : 2510010465
+   Kelas           : 3A NonReguler BJB
+   Tugas           : Tugas 4 Pemrograman Web 1 - Blog Saya (index.html + style.css)
+*/
+
+:root {
+    --warna-oranye-solid: #D98327;
+    --warna-krem-lembut: #ECE8AF;
+    --warna-hijau-daun: #4A943E;
+    --warna-hijau-tua: #186049;
+    --warna-teks: rgb(43, 51, 47);
+    --warna-sorot-halus: rgba(217, 131, 39, 0.12);
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Plus Jakarta Sans', Helvetica, Arial, sans-serif;
+    background-color: #ECE8AF;
+    color: var(--warna-teks);
+    line-height: 1.75;
+    margin: 0;
+    padding: 32px 16px;
+}
+
+.container {
+    max-width: 720px;
+    margin: 0 auto;
+    background-color: white;
+    border: 2px solid #D98327;
+    border-top: 8px solid #D98327;
+    border-radius: 10px;
+    padding: 28px 32px;
+}
+
+h1 {
+    font-family: 'Poppins', Arial, sans-serif;
+    font-size: 28px;
+    font-weight: 700;
+    line-height: 1.3;
+    color: #D98327;
+    margin: 0 0 8px 0;
+    text-align: left;
+}
+
+h2 {
+    font-family: 'Poppins', Arial, sans-serif;
+    font-size: 22px;
+    font-weight: 700;
+    line-height: 1.35;
+    color: #186049;
+    margin: 8px 0 10px 0;
+    text-align: left;
+}
+
+h3 {
+    font-family: 'Poppins', Arial, sans-serif;
+    font-size: 18px;
+    font-weight: 600;
+    color: #186049;
+    border-left: 4px solid #4A943E;
+    padding-left: 10px;
+    margin: 24px 0 10px 0;
+}
+
+article p {
+    font-size: 16px;
+    line-height: 1.8;
+    text-align: justify;
+    margin: 0 0 16px 0;
+}
+
+.kategori-label {
+    display: inline-block;
+    font-family: 'Poppins', Arial, sans-serif;
+    font-size: 12px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1.4px;
+    color: #4A943E;
+    background-color: #fcfbf4;
+    border: 1px solid #4A943E;
+    padding: 3px 10px;
+    border-radius: 4px;
+}
+
+.npm-badge {
+    font-family: 'JetBrains Mono', 'Courier New', monospace;
+    display: inline-block;
+    font-size: 13px;
+    font-weight: 500;
+    letter-spacing: 0.4px;
+    background-color: #186049;
+    color: #ECE8AF;
+    padding: 6px 12px;
+    border-radius: 6px;
+    margin: 0 0 16px 0;
+}
+
+strong {
+    color: #D98327;
+    font-weight: 700;
+}
+
+em {
+    color: #4A943E;
+    font-weight: 600;
+}
+
+/* === HEADER & NAVIGASI === */
+#blog-header {
+    margin-bottom: 22px;
+    padding-bottom: 18px;
+    border-bottom: 2px solid #ECE8AF;
+}
+
+header > nav {
+    background-color: #ECE8AF;
+    padding: 10px 14px;
+    border-radius: 8px;
+    border: 1px solid #D98327;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    align-items: center;
+}
+
+nav a {
+    font-family: 'Poppins', Arial, sans-serif;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 600;
+    color: #186049;
+    padding: 6px 12px;
+    border-radius: 6px;
+    transition: background-color 0.2s, color 0.2s;
+}
+
+/* === ARTIKEL, META WAKTU, BLOCKQUOTE & LIST === */
+#artikel-utama {
+    padding-top: 4px;
+}
+
+.artikel-meta {
+    font-size: 13.5px;
+    color: #186049;
+    background-color: #fcfbf4;
+    border-left: 4px solid #D98327;
+    padding: 8px 12px;
+    border-radius: 4px;
+    margin-bottom: 18px;
+}
+
+.artikel-meta time {
+    font-family: 'JetBrains Mono', 'Courier New', monospace;
+    font-weight: 600;
+    color: #D98327;
+}
+
+#kutipan-refleksi {
+    margin: 20px 0;
+    padding: 16px 20px;
+    background-color: var(--warna-sorot-halus);
+    border-left: 5px solid #D98327;
+    border-radius: 6px;
+    font-style: italic;
+    color: #186049;
+}
+
+blockquote footer {
+    margin-top: 8px;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 13.5px;
+    color: #4A943E;
+}
+
+ul.hobi-list {
+    list-style: none;
+    padding: 0;
+    margin: 12px 0 20px 0;
+}
+
+ul.hobi-list > li {
+    padding: 10px 14px;
+    margin-bottom: 8px;
+    border: 1px solid #ECE8AF;
+    border-left: 4px solid #4A943E;
+    border-radius: 6px;
+    background-color: #ffffff;
+}
+
+nav a:hover {
+    background-color: #D98327;
+    color: white;
+}
+
+ul.hobi-list > li:first-child {
+    border-left-color: #D98327;
+    font-weight: 600;
+}
+
+ul.hobi-list > li:nth-child(even) {
+    background-color: #fcfbf4;
+}
+
+.referensi-box {
+    background-color: #fcfbf4;
+    border: 1.5px solid #186049;
+    border-radius: 8px;
+    padding: 16px 20px;
+    margin-top: 22px;
+}
+
+.referensi-box ul {
+    margin: 8px 0 0 0;
+    padding-left: 20px;
+}
+
+.referensi-box li {
+    margin-bottom: 8px;
+}
+
+.referensi-box a {
+    color: #D98327;
+    font-weight: 700;
+    text-decoration: none;
+}
+
+.referensi-box a:hover {
+    color: #186049;
+    text-decoration: underline;
+}
+
+/* === FOOTER === */
+#footer-blog {
+    margin-top: 28px;
+    padding-top: 16px;
+    border-top: 2px solid #ECE8AF;
+    font-size: 13.5px;
+    color: #186049;
+    text-align: center;
+}
